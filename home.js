@@ -10,6 +10,58 @@ module.exports=()=>{
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styel.css">
     <title>Document</title>
+    <style>
+   body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+  
+ }
+ label{
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ #ttt{
+    background-color: rgb(157, 119, 193);
+ }
+ #ttt>td{
+     height: 50px;
+     width: 50px;
+     background-color: aqua;
+     border-radius: 20px;
+ }
+ 
+ input{
+     border-radius: 10px;
+     margin-bottom: 10px;    
+ }
+ 
+ button{
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     border-radius: 10px;
+     background-color: rgb(236, 207, 43);
+     color: rgb(52, 49, 49);
+     height: 40px;
+     padding: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ thead th{
+     height: 50px;
+     width: 50px;
+     background-color: aqua;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     border-radius: 20px;
+     border-width: 2px;
+     }
+ 
+
+ 
+  
+    </style>
 </head>
 <body>
 
