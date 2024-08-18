@@ -53,15 +53,15 @@ app.post("/",urlencodedparser,(req,res)=>{
    
     if(req.body.hidden==1){
         empdetails.collection.insertOne({id:req.body.id,name: req.body.name,age:req.body.age,designation:req.body.desg,mobile:req.body.mobile })
-        .then(()=>{console.log('inserted successsfully');res.send(`<script>alert('DATA ADDED SUCCESS');javascript:history.back();</script>`)})
+        .then(()=>{console.log('inserted successsfully');res.send(`<script>alert('DATA ADDED SUCCESS');window.location.replace('https://employee1-1.onrender.com');</script>`)})
         .catch((err)=>{console.error(`connection Problem: ${err}`)});
     }else if(req.body.hidden==2){
         empdetails.collection.deleteOne({id:req.body.did})
-        .then(()=>{  res.send(`<script>alert('Deleted');javascript:history.back();</script>`)      })
+        .then(()=>{  res.send(`<script>alert('Deleted');window.location.replace('https://employee1-1.onrender.com');</script>`)      })
         .catch((err)=>{console.error(`connection Problem: ${err}`)});
     }else if(req.body.hidden==3){
         empdetails.updateOne({id:req.body.id},{id:req.body.idu,name: req.body.nameu,age:req.body.ageu,designation:req.body.desgu,mobile:req.body.mobileu })
-        .then(()=>{  res.send(`<script>alert('Updated');javascript:history.back();</script>`)      })
+        .then(()=>{  res.send(`<script>alert('Updated');window.location.replace('https://employee1-1.onrender.com');</script>`)      })
         .catch((err)=>{console.error(`connection Problem: ${err}`)});
     }
   
